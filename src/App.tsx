@@ -2,6 +2,7 @@ import DarkVeil from "./components/DarkVeil";
 import Navbar from "./components/navbar";
 
 import Hero from "./sections/Hero";
+import About from "./sections/About";
 
 export default function App() {
   return (
@@ -21,6 +22,7 @@ export default function App() {
 
       <main className="relative z-10">
         <Hero />
+        <About />
       </main>
     </>
   );
