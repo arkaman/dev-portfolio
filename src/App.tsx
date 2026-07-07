@@ -3,6 +3,7 @@ import Navbar from "./components/navbar";
 
 import Hero from "./sections/Hero";
 import About from "./sections/About";
+import Projects from "./sections/Projects";
 
 export default function App() {
   return (
@@ -23,6 +24,7 @@ export default function App() {
       <main className="relative z-10">
         <Hero />
         <About />
+        <Projects />
       </main>
     </>
   );
