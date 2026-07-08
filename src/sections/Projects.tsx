@@ -27,13 +27,22 @@ export default function Projects() {
     return (
         <section
             id="projects"
-            className="relative flex min-h-screen justify-center"
+            className="relative flex min-h-screen justify-center py-20"
         >
             <div className="mx-auto w-full max-w-7xl px-8">
-                <h1 className="text-4xl font-bold text-white">
-                    My Projects
-                </h1>
 
+                {/* Heading */}
+                <div className="mb-14">
+                    <span className="text-sm uppercase tracking-[0.35em] text-neutral-500">
+                        Projects
+                    </span>
+
+                    <h2 className="mt-3 text-5xl font-bold tracking-tight text-white">
+                        Featured Work
+                    </h2>
+                </div>
+
+                {/* Project Grid */}
                 <div className="grid gap-10 md:grid-cols-2">
                     {projects.map((project) => (
                         <ProjectCard key={project.title} {...project} />

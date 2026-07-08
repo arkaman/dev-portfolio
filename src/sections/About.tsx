@@ -10,12 +10,16 @@ export default function About() {
             <div className="mx-auto flex w-full max-w-7xl flex-col px-8">
 
                 {/* Top */}
-                <div className="max-w-8xl">
-                    <h1 className="mb-6 text-4xl font-bold tracking-tight text-white">
-                        About Me
-                    </h1>
+                <div>
+                    <span className="text-sm uppercase tracking-[0.35em] text-neutral-500">
+                        About
+                    </span>
 
-                    <p className="text-lg leading-8 text-neutral-300">
+                    <h2 className="mt-3 text-5xl font-bold tracking-tight text-white">
+                        Who I Am
+                    </h2>
+
+                    <p className="mt-6 max-w-7xl text-lg leading-8 text-neutral-300">
                         I'm a full stack developer with a strong focus on Java and the Spring ecosystem, building secure, scalable web applications from backend APIs to modern React frontends. I enjoy designing systems that are reliable, performant, and intuitive, with a growing interest in AI-powered applications and developer tooling.
                     </p>
                 </div>

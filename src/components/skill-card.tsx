@@ -41,8 +41,8 @@ export default function SkillCard({
                                 text-sm font-medium
                                 text-neutral-300
                                 transition-all duration-300
-                                hover:border-violet-500/50
-                                hover:bg-violet-500/10
+                                hover:border-primary/50
+                                hover:bg-primary/10
                                 hover:text-white
                             "
                         >

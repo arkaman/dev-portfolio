@@ -27,7 +27,7 @@ export default function ContactForm() {
                         <input
                             type="text"
                             placeholder="Your Name"
-                            className="w-full rounded-xl border border-white/10 bg-white/5 px-4 py-3 text-white placeholder:text-neutral-500 outline-none transition focus:border-violet-500 focus:ring-2 focus:ring-violet-500/30"
+                            className="w-full rounded-xl border border-white/10 bg-white/5 px-4 py-3 text-white placeholder:text-neutral-500 outline-none transition focus:border-primary focus:ring-2 focus:ring-primary/30"
                         />
                     </div>
 
@@ -39,7 +39,7 @@ export default function ContactForm() {
                         <input
                             type="email"
                             placeholder="Your Email Address"
-                            className="w-full rounded-xl border border-white/10 bg-white/5 px-4 py-3 text-white placeholder:text-neutral-500 outline-none transition focus:border-violet-500 focus:ring-2 focus:ring-violet-500/30"
+                            className="w-full rounded-xl border border-white/10 bg-white/5 px-4 py-3 text-white placeholder:text-neutral-500 outline-none transition focus:border-primary focus:ring-2 focus:ring-primary/30"
                         />
                     </div>
                 </div>
@@ -52,7 +52,7 @@ export default function ContactForm() {
                     <input
                         type="text"
                         placeholder="How can I help you?"
-                        className="w-full rounded-xl border border-white/10 bg-white/5 px-4 py-3 text-white placeholder:text-neutral-500 outline-none transition focus:border-violet-500 focus:ring-2 focus:ring-violet-500/30"
+                        className="w-full rounded-xl border border-white/10 bg-white/5 px-4 py-3 text-white placeholder:text-neutral-500 outline-none transition focus:border-primary focus:ring-2 focus:ring-primary/30"
                     />
                 </div>
 
@@ -64,7 +64,7 @@ export default function ContactForm() {
                     <textarea
                         rows={3}
                         placeholder="Your message here..."
-                        className="w-full rounded-xl border border-white/10 bg-white/5 px-4 py-3 text-white placeholder:text-neutral-500 outline-none transition focus:border-violet-500 focus:ring-2 focus:ring-violet-500/30"
+                        className="w-full rounded-xl border border-white/10 bg-white/5 px-4 py-3 text-white placeholder:text-neutral-500 outline-none transition focus:border-primary focus:ring-2 focus:ring-primary/30"
                     />
                 </div>
 
