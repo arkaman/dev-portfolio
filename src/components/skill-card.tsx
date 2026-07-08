@@ -1,5 +1,3 @@
-import { motion } from "motion/react";
-
 interface SkillCardProps {
     title: string;
     skills: string[];
@@ -10,12 +8,19 @@ export default function SkillCard({
     skills,
 }: SkillCardProps) {
     return (
-        <motion.div
-            initial={{ opacity: 0, y: 24 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, amount: 0.3 }}
-            transition={{ duration: 0.5 }}
-            className="rounded-2xl border border-white/10 bg-white/5 p-5 backdrop-blur-xl transition-all duration-300 hover:border-white/20 hover:bg-white/10"
+        <div
+            className="
+                group
+                rounded-2xl
+                border border-white/10
+                bg-white/5
+                p-5
+                backdrop-blur-sm
+                transition-all duration-300
+                hover:-translate-y-1
+                hover:border-violet-500/50
+                hover:bg-white/10
+            "
         >
             <h3 className="mb-4 text-lg font-semibold text-white">
                 {title}
@@ -25,12 +30,23 @@ export default function SkillCard({
                 {skills.map((skill) => (
                     <span
                         key={skill}
-                        className="rounded-full border border-white/10 bg-white/5 px-3 py-1 text-sm font-medium text-neutral-300 transition-colors duration-200 hover:border-white/20 hover:bg-white/10 hover:text-white"
+                        className="
+                            rounded-full
+                            border border-white/10
+                            bg-white/5
+                            px-3 py-1
+                            text-sm font-medium
+                            text-neutral-300
+                            transition-all duration-300
+                            hover:border-violet-500/50
+                            hover:bg-violet-500/10
+                            hover:text-white
+                        "
                     >
                         {skill}
                     </span>
                 ))}
             </div>
-        </motion.div>
+        </div>
     );
 }
