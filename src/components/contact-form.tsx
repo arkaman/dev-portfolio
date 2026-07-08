@@ -12,56 +12,58 @@ export default function ContactForm() {
         >
             <form className="space-y-6 p-10">
 
-                <h3 className="text-3xl font-bold text-white">
+                <h3 className="text-2xl font-bold text-white">
                     Send a Message
                 </h3>
 
-                <div className="space-y-2">
-                    <label className="text-sm text-neutral-400">
-                        Name
-                    </label>
+                <div className="grid gap-4 md:grid-cols-2">
+                    <div className="space-y-2">
+                        <label className="text-sm text-neutral-400">
+                            Name
+                        </label>
 
-                    <input
-                        type="text"
-                        placeholder="Your Name"
-                        className="
-                                    w-full rounded-xl
-                                    border border-white/10
-                                    bg-white/5
-                                    px-4 py-3
-                                    text-white
-                                    placeholder:text-neutral-500
-                                    outline-none
-                                    transition
-                                    focus:border-violet-500
-                                    focus:ring-2
-                                    focus:ring-violet-500/30
-                                    "
-                    />
-                </div>
+                        <input
+                            type="text"
+                            placeholder="Your Name"
+                            className="
+                w-full rounded-xl
+                border border-white/10
+                bg-white/5
+                px-4 py-3
+                text-white
+                placeholder:text-neutral-500
+                outline-none
+                transition
+                focus:border-violet-500
+                focus:ring-2
+                focus:ring-violet-500/30
+            "
+                        />
+                    </div>
 
-                <div className="space-y-2">
-                    <label className="text-sm text-neutral-400">
-                        Email
-                    </label>
+                    <div className="space-y-2">
+                        <label className="text-sm text-neutral-400">
+                            Email
+                        </label>
 
-                    <input
-                        type="email"
-                        placeholder="Your Email Address"
-                        className="
-                                    w-full rounded-xl
-                                    border border-white/10
-                                    bg-white/5
-                                    px-4 py-3
-                                    text-white
-                                    placeholder:text-neutral-500
-                                    outline-none
-                                    transition
-                                    focus:border-violet-500
-                                    focus:ring-2
-                                    focus:ring-violet-500/30
-                                    "
-                    />
+                        <input
+                            type="email"
+                            placeholder="Your Email Address"
+                            className="
+                w-full rounded-xl
+                border border-white/10
+                bg-white/5
+                px-4 py-3
+                text-white
+                placeholder:text-neutral-500
+                outline-none
+                transition
+                focus:border-violet-500
+                focus:ring-2
+                focus:ring-violet-500/30
+            "
+                        />
+                    </div>
                 </div>
 
                 <div className="space-y-2">
@@ -94,7 +96,7 @@ export default function ContactForm() {
                     </label>
 
                     <textarea
-                        rows={4}
+                        rows={3}
                         placeholder="Your message here..."
                         className="
                                     w-full rounded-xl
