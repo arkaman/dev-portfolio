@@ -18,9 +18,9 @@ export default function Contact() {
                     </h2>
                 </div>
 
-                <div className="grid gap-8 lg:grid-cols-[1.4fr_1fr] lg:items-start">
+                <div>
                     <ContactInfo />
-                    <ContactForm />
+                    {/* <ContactForm /> */}
                 </div>
             </div>
         </section>
