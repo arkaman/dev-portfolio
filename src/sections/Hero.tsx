@@ -8,6 +8,7 @@ import {
     Terminal,
     TypingAnimation,
 } from "@/components/ui/terminal";
+import { CometCard } from "@/components/ui/comet-card";
 
 export default function Hero() {
     return (
@@ -37,43 +38,53 @@ export default function Hero() {
                 </div>
 
                 {/* Right */}
-                <div className="hidden md:block">
-                    <Terminal className="w-125 h-75 font-mono">
-                        <TypingAnimation delay={0}>$ whoami</TypingAnimation>
+                <CometCard>
+                    <div className="hidden md:block">
+                        <Terminal className="w-125 h-75 font-mono">
+                            <TypingAnimation delay={0}>$ whoami</TypingAnimation>
 
-                        <AnimatedSpan delay={800} className="text-amber-400">
-                            arkayanmanna
-                        </AnimatedSpan>
+                            <AnimatedSpan delay={800} className="text-amber-400 hover:text-amber-600">
+                                <a href="https://linkedin.com/in/arkayanmanna" target="_blank" rel="noopener noreferrer">
+                                    arkayanmanna
+                                </a>
+                            </AnimatedSpan>
 
-                        <TypingAnimation delay={1600}>
-                            $ cat mission.txt
-                        </TypingAnimation>
+                            <TypingAnimation delay={1600}>
+                                $ cat mission.txt
+                            </TypingAnimation>
 
-                        <AnimatedSpan delay={2400} className="text-blue-200">
-                            Turning ideas into reliable software
-                        </AnimatedSpan>
+                            <AnimatedSpan delay={2400} className="text-blue-200">
+                                Turning ideas into reliable software
+                            </AnimatedSpan>
 
-                        <AnimatedSpan delay={3200} className="text-blue-200">
-                            through thoughtful engineering.
-                        </AnimatedSpan>
+                            <AnimatedSpan delay={3200} className="text-blue-200">
+                                through thoughtful engineering.
+                            </AnimatedSpan>
 
-                        <TypingAnimation delay={4800}>
-                            $ ls portfolio/
-                        </TypingAnimation>
+                            <TypingAnimation delay={4800}>
+                                $ ls portfolio/
+                            </TypingAnimation>
 
-                        <AnimatedSpan delay={5600} className="text-blue-500">
-                            about.md
-                        </AnimatedSpan>
+                            <AnimatedSpan delay={5600} className="text-blue-500 hover:text-blue-700  transition-colors duration-300">
+                                <a href="#about">
+                                    about.md
+                                </a>
+                            </AnimatedSpan>
 
-                        <AnimatedSpan delay={6200} className="text-green-500">
-                            projects/
-                        </AnimatedSpan>
+                            <AnimatedSpan delay={6200} className="text-green-500 hover:text-green-700  transition-colors duration-300">
+                                <a href="#projects">
+                                    projects/
+                                </a>
+                            </AnimatedSpan>
 
-                        <AnimatedSpan delay={6800} className="text-blue-500">
-                            contact.sh
-                        </AnimatedSpan>
-                    </Terminal>
-                </div>
+                            <AnimatedSpan delay={6800} className="text-blue-500 hover:text-blue-700  transition-colors duration-300">
+                                <a href="#contact">
+                                    contact.sh
+                                </a>
+                            </AnimatedSpan>
+                        </Terminal>
+                    </div>
+                </CometCard>
             </div>
 
             <div className="hidden md:block">
