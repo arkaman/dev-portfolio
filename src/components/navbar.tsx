@@ -8,7 +8,7 @@ const links = [
 
 export default function Navbar() {
     return (
-        <header className="fixed top-4 left-1/2 z-50 w-full -translate-x-1/2 px-4 md:top-6">
+        <header className="fixed top-4 left-1/2 z-50 lg:w-full -translate-x-1/2 px-4 md:top-6">
             <nav
                 className={cn(
                     "mx-auto flex w-full max-w-md items-center justify-evenly",

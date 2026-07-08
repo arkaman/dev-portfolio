@@ -5,7 +5,7 @@ export default function About() {
     return (
         <section
             id="about"
-            className="relative flex min-h-screen items-center justify-center py-20"
+            className="relative flex min-h-screen items-center justify-center px-6 py-20 sm:px-8"
         >
             <div className="mx-auto flex w-full max-w-7xl flex-col px-8">
 
@@ -15,21 +15,21 @@ export default function About() {
                         About
                     </span>
 
-                    <h2 className="mt-3 text-5xl font-bold tracking-tight text-white">
+                    <h2 className="mt-3 text-4xl font-bold tracking-tight text-white sm:text-5xl">
                         Who I Am
                     </h2>
 
-                    <p className="mt-6 max-w-7xl text-lg leading-8 text-neutral-300">
+                    <p className="mt-6 max-w-5xl text-base leading-7 text-neutral-300 sm:text-lg sm:leading-8">
                         I'm a full stack developer with a strong focus on Java and the Spring ecosystem, building secure, scalable web applications from backend APIs to modern React frontends. I enjoy designing systems that are reliable, performant, and intuitive, with a growing interest in AI-powered applications and developer tooling.
                     </p>
                 </div>
 
                 {/* Bottom */}
-                <div className="flex flex-col gap-12 md:flex-row md:items-center">
+                <div className="flex flex-col gap-12 lg:flex-row md:items-center">
 
                     {/* Left - Skill Cards */}
                     <div className="flex-1">
-                        <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
+                        <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
                             <SkillCard
                                 title="Languages"
                                 skills={["Java", "TypeScript", "Python", "JavaScript"]}
@@ -53,8 +53,10 @@ export default function About() {
                     </div>
 
                     {/* Right - Icon Cloud */}
-                    <div className="flex flex-1 items-center justify-center">
-                        <SkillsIconCloud />
+                    <div className="order-first flex flex-1 items-center justify-center lg:order-last">
+                        <div className="scale-75 sm:scale-90 lg:scale-100">
+                            <SkillsIconCloud />
+                        </div>
                     </div>
 
                 </div>

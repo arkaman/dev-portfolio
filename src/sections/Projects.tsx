@@ -29,23 +29,23 @@ export default function Projects() {
     return (
         <section
             id="projects"
-            className="relative flex min-h-screen justify-center py-20"
+            className="relative flex min-h-screen justify-center px-6 py-20 sm:px-8"
         >
             <div className="mx-auto w-full max-w-7xl px-8">
 
                 {/* Heading */}
-                <div className="mb-14">
+                <div className="mb-10">
                     <span className="text-sm uppercase tracking-[0.35em] text-neutral-500">
                         Projects
                     </span>
 
-                    <h2 className="mt-3 text-5xl font-bold tracking-tight text-white">
+                    <h2 className="mt-3 text-4xl font-bold tracking-tight text-white sm:text-5xl">
                         Featured Work
                     </h2>
                 </div>
 
                 {/* Project Grid */}
-                <div className="grid gap-10 md:grid-cols-2">
+                <div className="grid grid-cols-1 gap-8 lg:grid-cols-2">
                     {projects.map((project) => (
                         <ProjectCard key={project.title} {...project} />
                     ))}
@@ -65,12 +65,13 @@ export default function Projects() {
                             target="_blank"
                             rel="noopener noreferrer"
                             className="
-                                group inline-flex items-center gap-3
-                                rounded-xl px-8 py-3.5
-                                font-semibold text-white
+                                group inline-flex max-w-full items-center justify-center gap-3
+                                rounded-xl
+                                px-6 py-3.5
+                                text-center font-semibold text-white
                                 transition-all duration-300
                                 hover:-translate-y-1
-                            "
+                                "
                         >
                             <GithubIcon />
                             More Projects on GitHub

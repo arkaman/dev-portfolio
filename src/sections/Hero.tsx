@@ -17,7 +17,7 @@ export default function Hero() {
     return (
         <section
             id="home"
-            className="relative flex min-h-screen items-center justify-center overflow-hidden"
+            className="relative flex min-h-screen items-center justify-center overflow-hidden px-6 py-24 sm:px-8"
         >
             {/* Background */}
             <div
@@ -41,9 +41,9 @@ export default function Hero() {
                 />
             </div>
 
-            <div className="mx-auto flex w-full max-w-7xl flex-col items-center justify-between gap-20 px-8 md:flex-row">
+            <div className="mx-auto flex w-full max-w-7xl flex-col items-center gap-12 lg:gap-20 px-6 sm:px-8 lg:flex-row lg:justify-between">
                 {/* Left */}
-                <div className="max-w-xl space-y-2">
+                <div className="mw-full max-w-xl space-y-2 text-center lg:text-left">
                     <BlurFade delay={0}>
                         <h1 className="text-6xl font-bold tracking-tight text-white">
                             Arkayan Manna
@@ -57,13 +57,13 @@ export default function Hero() {
                     </BlurFade>
 
                     <BlurFade delay={0.16}>
-                        <p className="flex items-center gap-1 text-neutral-300">
+                        <p className="flex items-center justify-center gap-1 text-neutral-300 lg:justify-start">
                             <MapPin className="h-4 w-4" />
                             Kolkata, India
                         </p>
                     </BlurFade>
 
-                    <div className="mt-7">
+                    <div className="mt-7 flex justify-center lg:justify-start">
                         <BlurFade delay={0.24}>
                             <DockContact />
                         </BlurFade>
@@ -73,7 +73,7 @@ export default function Hero() {
                 {/* Right */}
                 <BlurFade delay={0}>
                     <CometCard>
-                        <div className="hidden md:block">
+                        <div className="hidden lg:block">
                             <Terminal className="h-75 w-125 font-mono">
                                 <TypingAnimation delay={0}>$ whoami</TypingAnimation>
 
@@ -138,7 +138,7 @@ export default function Hero() {
                 </BlurFade>
             </div>
 
-            <div className="absolute min-w-full bottom-2 left-1/2 hidden -translate-x-1/2 md:block">
+            <div className="absolute min-w-full bottom-2 left-1/2 hidden -translate-x-1/2 lg:block">
                 <a href="#about">
                     <BlurFade delay={1}>
                         <ScrollIndicator />

@@ -1,10 +1,10 @@
 export default function Footer() {
     return (
         <footer className="border-t border-white/5">
-            <div className="mx-auto w-full max-w-7xl px-6 py-12">
+            <div className="mx-auto w-full max-w-7xl px-6 py-10 sm:px-8 sm:py-12">
 
                 {/* Top */}
-                <div className="mb-10 flex justify-end">
+                <div className="mb-10 flex justify-center md:justify-end">
                     <a
                         href="#home"
                         className="
@@ -26,7 +26,7 @@ export default function Footer() {
                 </div>
 
                 {/* Bottom */}
-                <div className="grid gap-10 md:grid-cols-3">
+                <div className="grid gap-10 text-center md:grid-cols-3 md:text-left">
 
                     {/* Navigation */}
                     <div>
@@ -34,7 +34,7 @@ export default function Footer() {
                             Navigation
                         </h3>
 
-                        <ul className="space-y-3">
+                        <ul className="space-y-2">
                             <li>
                                 <a
                                     href="#about"
