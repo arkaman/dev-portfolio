@@ -26,11 +26,27 @@ export default function ProjectCard({
 }: ProjectCardProps) {
     return (
         <CardContainer className="inter-var">
-            <CardBody className="group/card relative h-auto w-full rounded-xl border border-black/10 bg-gray-50 p-6 dark:border-white/20 dark:bg-black dark:hover:shadow-2xl dark:hover:shadow-emerald-500/10">
-
+            <CardBody
+                className="
+                    group/card
+                    relative
+                    h-auto
+                    w-full
+                    rounded-2xl
+                    border
+                    border-border
+                    bg-card
+                    p-6
+                    text-card-foreground
+                    transition-all
+                    duration-300
+                    hover:shadow-2xl
+                    hover:shadow-primary/20
+                "
+            >
                 <CardItem
                     translateZ="50"
-                    className="text-2xl font-bold text-neutral-900 dark:text-white"
+                    className="text-2xl font-bold text-card-foreground"
                 >
                     {title}
                 </CardItem>
@@ -38,14 +54,14 @@ export default function ProjectCard({
                 <CardItem
                     as="p"
                     translateZ="60"
-                    className="mt-3 text-sm leading-6 text-neutral-600 dark:text-neutral-300"
+                    className="mt-3 text-sm leading-6 text-muted-foreground"
                 >
                     {description}
                 </CardItem>
 
                 <CardItem
-                    translateZ="100"
                     as="a"
+                    translateZ="100"
                     href={demoUrl}
                     target="_blank"
                     rel="noopener noreferrer"
@@ -54,48 +70,95 @@ export default function ProjectCard({
                     <img
                         src={imageSrc}
                         alt={title}
-                        className="h-auto w-full rounded-xl object-cover group-hover/card:shadow-xl"
+                        className="
+                            h-auto
+                            w-full
+                            rounded-xl
+                            object-cover
+                            transition-shadow
+                            duration-300
+                            group-hover/card:shadow-xl
+                            group-hover/card:shadow-primary/20
+                        "
                     />
                 </CardItem>
 
                 <div className="mt-8 flex items-center justify-between">
+                    <CardItem
+                        as="a"
+                        translateZ={20}
+                        href={demoUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="
+                            flex
+                            items-center
+                            gap-2
+                            rounded-lg
+                            px-4
+                            py-2
+                            text-sm
+                            font-medium
+                            text-foreground
+                            transition-colors
+                            hover:text-primary
+                        "
+                    >
+                        <ExternalLink size={16} />
+                        Live Demo
+                    </CardItem>
+
+                    <div className="flex gap-3">
                         <CardItem
                             translateZ={20}
                             as="a"
-                            href={demoUrl}
+                            href={frontendUrl}
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="flex items-center gap-2 rounded-lg px-4 py-2 text-sm font-medium transition hover:text-blue-500"
+                            className="
+                                flex items-center gap-2
+                                rounded-lg
+                                bg-linear-to-r
+                                from-violet-500
+                                to-cyan-500
+                                px-4 py-2
+                                text-sm font-semibold
+                                text-white
+                                transition-all duration-300
+                                hover:-translate-y-0.5
+                                hover:shadow-lg
+                                hover:shadow-violet-500/30
+                            "
                         >
-                            <ExternalLink size={16} />
-                            Live Demo
+                            <CodeXml size={16} />
+                            Frontend
                         </CardItem>
 
-                        <div className="flex gap-3">
-                            <CardItem
-                                translateZ={20}
-                                as="a"
-                                href={frontendUrl}
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="flex items-center gap-2 rounded-lg bg-black px-4 py-2 text-sm font-semibold text-white transition hover:opacity-90 dark:bg-white dark:text-black"
-                            >
-                                <CodeXml size={16} />
-                                Frontend
-                            </CardItem>
-
-                            <CardItem
-                                translateZ={20}
-                                as="a"
-                                href={backendUrl}
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="flex items-center gap-2 rounded-lg bg-black px-4 py-2 text-sm font-semibold text-white transition hover:opacity-90 dark:bg-white dark:text-black"
-                            >
-                                <CodeXml size={16} />
-                                Backend
-                            </CardItem>
-                        </div>
+                        <CardItem
+                            translateZ={20}
+                            as="a"
+                            href={backendUrl}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="
+                                flex items-center gap-2
+                                rounded-lg
+                                bg-linear-to-r
+                                from-violet-500
+                                to-cyan-500
+                                px-4 py-2
+                                text-sm font-semibold
+                                text-white
+                                transition-all duration-300
+                                hover:-translate-y-0.5
+                                hover:shadow-lg
+                                hover:shadow-violet-500/30
+                            "
+                        >
+                            <CodeXml size={16} />
+                            Backend
+                        </CardItem>
+                    </div>
                 </div>
             </CardBody>
         </CardContainer>

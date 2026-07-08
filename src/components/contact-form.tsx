@@ -1,17 +1,19 @@
-import { MagicCard } from "@/components/ui/magic-card";
 import { Send } from "lucide-react";
+import { ShineBorder } from "@/components/ui/shine-border";
 
 export default function ContactForm() {
     return (
-        <MagicCard
-            className="rounded-3xl border border-white/10 bg-neutral-950/60 backdrop-blur-xl"
-            gradientFrom="#22D3EE"
-            gradientTo="#A855F7"
-            gradientColor="#1E1B4B"
-            gradientSize={350}
-        >
-            <form className="space-y-6 p-10">
+        <div className="relative overflow-hidden rounded-3xl bg-card backdrop-blur-xl">
+            <ShineBorder
+                borderWidth={2}
+                duration={10}
+                shineColor={[
+                    "#1e1b4b",
+                    "#090c9b",
+                ]}
+            />
 
+            <form className="relative z-10 space-y-6 p-10">
                 <h3 className="text-2xl font-bold text-white">
                     Send a Message
                 </h3>
@@ -25,19 +27,7 @@ export default function ContactForm() {
                         <input
                             type="text"
                             placeholder="Your Name"
-                            className="
-                w-full rounded-xl
-                border border-white/10
-                bg-white/5
-                px-4 py-3
-                text-white
-                placeholder:text-neutral-500
-                outline-none
-                transition
-                focus:border-violet-500
-                focus:ring-2
-                focus:ring-violet-500/30
-            "
+                            className="w-full rounded-xl border border-white/10 bg-white/5 px-4 py-3 text-white placeholder:text-neutral-500 outline-none transition focus:border-violet-500 focus:ring-2 focus:ring-violet-500/30"
                         />
                     </div>
 
@@ -49,19 +39,7 @@ export default function ContactForm() {
                         <input
                             type="email"
                             placeholder="Your Email Address"
-                            className="
-                w-full rounded-xl
-                border border-white/10
-                bg-white/5
-                px-4 py-3
-                text-white
-                placeholder:text-neutral-500
-                outline-none
-                transition
-                focus:border-violet-500
-                focus:ring-2
-                focus:ring-violet-500/30
-            "
+                            className="w-full rounded-xl border border-white/10 bg-white/5 px-4 py-3 text-white placeholder:text-neutral-500 outline-none transition focus:border-violet-500 focus:ring-2 focus:ring-violet-500/30"
                         />
                     </div>
                 </div>
@@ -74,19 +52,7 @@ export default function ContactForm() {
                     <input
                         type="text"
                         placeholder="How can I help you?"
-                        className="
-                                    w-full rounded-xl
-                                    border border-white/10
-                                    bg-white/5
-                                    px-4 py-3
-                                    text-white
-                                    placeholder:text-neutral-500
-                                    outline-none
-                                    transition
-                                    focus:border-violet-500
-                                    focus:ring-2
-                                    focus:ring-violet-500/30
-                                    "
+                        className="w-full rounded-xl border border-white/10 bg-white/5 px-4 py-3 text-white placeholder:text-neutral-500 outline-none transition focus:border-violet-500 focus:ring-2 focus:ring-violet-500/30"
                     />
                 </div>
 
@@ -98,46 +64,18 @@ export default function ContactForm() {
                     <textarea
                         rows={3}
                         placeholder="Your message here..."
-                        className="
-                                    w-full rounded-xl
-                                    border border-white/10
-                                    bg-white/5
-                                    px-4 py-3
-                                    text-white
-                                    placeholder:text-neutral-500
-                                    outline-none
-                                    transition
-                                    focus:border-violet-500
-                                    focus:ring-2
-                                    focus:ring-violet-500/30
-                                    "
+                        className="w-full rounded-xl border border-white/10 bg-white/5 px-4 py-3 text-white placeholder:text-neutral-500 outline-none transition focus:border-violet-500 focus:ring-2 focus:ring-violet-500/30"
                     />
                 </div>
 
                 <button
                     type="submit"
-                    className="
-                                inline-flex items-center
-                                justify-center
-                                gap-3
-                                w-full rounded-xl
-                                bg-linear-to-r
-                                from-violet-500
-                                to-cyan-500
-                                py-3.5
-                                font-semibold
-                                text-white
-                                transition-all
-                                hover:-translate-y-1
-                                hover:shadow-lg
-                                hover:shadow-violet-500/30
-                            "
+                    className="inline-flex w-full items-center justify-center gap-3 rounded-xl bg-linear-to-r from-violet-500 to-cyan-500 py-3.5 font-semibold text-white transition-all hover:-translate-y-1 hover:shadow-lg hover:shadow-violet-500/30"
                 >
                     <Send size={20} />
                     Send Message
                 </button>
-
             </form>
-        </MagicCard>
+        </div>
     );
 }

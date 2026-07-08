@@ -1,6 +1,6 @@
 export default function Footer() {
     return (
-        <footer className="border-t border-white/10">
+        <footer className="border-t border-white/5">
             <div className="mx-auto w-full max-w-7xl px-6 py-12">
 
                 {/* Top */}

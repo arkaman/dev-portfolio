@@ -1,3 +1,5 @@
+import { MagicCard } from "@/components/ui/magic-card";
+
 interface SkillCardProps {
     title: string;
     skills: string[];
@@ -8,45 +10,47 @@ export default function SkillCard({
     skills,
 }: SkillCardProps) {
     return (
-        <div
+        <MagicCard
             className="
-                group
                 rounded-2xl
                 border border-white/10
                 bg-white/5
-                p-5
                 backdrop-blur-sm
-                transition-all duration-300
+                transition-transform duration-300
                 hover:-translate-y-1
-                hover:border-violet-500/50
-                hover:bg-white/10
             "
+            gradientFrom="#1e1b4b"
+            gradientTo="#090c9b"
+            gradientColor="#1E1B4B"
+            gradientSize={250}
         >
-            <h3 className="mb-4 text-lg font-semibold text-white">
-                {title}
-            </h3>
+            <div className="rounded-2xl p-5">
+                <h3 className="mb-4 text-lg font-semibold text-white">
+                    {title}
+                </h3>
 
-            <div className="flex flex-wrap gap-2">
-                {skills.map((skill) => (
-                    <span
-                        key={skill}
-                        className="
-                            rounded-full
-                            border border-white/10
-                            bg-white/5
-                            px-3 py-1
-                            text-sm font-medium
-                            text-neutral-300
-                            transition-all duration-300
-                            hover:border-violet-500/50
-                            hover:bg-violet-500/10
-                            hover:text-white
-                        "
-                    >
-                        {skill}
-                    </span>
-                ))}
+                <div className="flex flex-wrap gap-2">
+                    {skills.map((skill) => (
+                        <span
+                            key={skill}
+                            className="
+                                rounded-full
+                                border border-white/10
+                                bg-white/5
+                                px-3 py-1
+                                text-sm font-medium
+                                text-neutral-300
+                                transition-all duration-300
+                                hover:border-violet-500/50
+                                hover:bg-violet-500/10
+                                hover:text-white
+                            "
+                        >
+                            {skill}
+                        </span>
+                    ))}
+                </div>
             </div>
-        </div>
+        </MagicCard>
     );
 }
