@@ -1,5 +1,8 @@
 import ProjectCard from "@/components/project-card";
 
+import GithubIcon from "@/assets/icons/GithubIcon";
+import { MagicCard } from "@/components/ui/magic-card";
+
 const projects = [
     {
         title: "Task Manager",
@@ -22,7 +25,6 @@ const projects = [
         backendUrl: "https://github.com/arkaman/weather-ai-service",
     },
 ];
-
 export default function Projects() {
     return (
         <section
@@ -48,6 +50,34 @@ export default function Projects() {
                         <ProjectCard key={project.title} {...project} />
                     ))}
                 </div>
+
+                {/* GitHub Button */}
+                <div className="mt-14 flex justify-center">
+                    <MagicCard
+                        className="rounded-xl border border-white/10 bg-white/5 backdrop-blur-sm"
+                        gradientFrom="#1e1b4b"
+                        gradientTo="#090c9b"
+                        gradientColor="#1E1B4B"
+                        gradientSize={250}
+                    >
+                        <a
+                            href="https://github.com/arkaman"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="
+                                group inline-flex items-center gap-3
+                                rounded-xl px-8 py-3.5
+                                font-semibold text-white
+                                transition-all duration-300
+                                hover:-translate-y-1
+                            "
+                        >
+                            <GithubIcon />
+                            More Projects on GitHub
+                        </a>
+                    </MagicCard>
+                </div>
+
             </div>
         </section>
     );
