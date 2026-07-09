@@ -1,5 +1,5 @@
 import ContactInfo from "@/components/contact-info";
-// import ContactForm from "@/components/contact-form";
+import ContactForm from "@/components/contact-form";
 
 export default function Contact() {
     return (
@@ -18,10 +18,10 @@ export default function Contact() {
                     </h2>
                 </div>
 
-                {/* <div className="mt-16 grid gap-10 lg:grid-cols-[1.4fr_1fr] lg:items-start"> */}
+                <div className="mt-16 grid gap-10 lg:grid-cols-[1.4fr_1fr] lg:items-start">
                     <ContactInfo />
-                    {/* <ContactForm /> */}
-                {/* </div> */}
+                    <ContactForm />
+                </div>
             </div>
         </section>
     );
