@@ -14,3 +14,4 @@
 * [React Bits](https://reactbits.dev/)
 * [Magic UI](https://magicui.design/)
 * [Aceternity UI](https://ui.aceternity.com)
+* [Formspree](https://formspree.io/)
