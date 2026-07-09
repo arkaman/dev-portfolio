@@ -5,10 +5,10 @@ export default function Contact() {
     return (
         <section
             id="contact"
-            className="relative flex min-h-screen items-center justify-center px-6 py-20 sm:px-8 sm:py-24"
+            className="relative flex min-h-screen items-center justify-center px-6 py-20 sm:px-8"
         >
             <div className="mx-auto w-full max-w-7xl px-8">
-                <div className="mb-14">
+                <div className="mb-8">
                     <span className="text-sm uppercase tracking-[0.35em] text-neutral-500">
                         Contact
                     </span>

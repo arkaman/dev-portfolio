@@ -34,7 +34,7 @@ export default function Projects() {
             <div className="mx-auto w-full max-w-7xl px-8">
 
                 {/* Heading */}
-                <div className="mb-10">
+                <div className="mb-8">
                     <span className="text-sm uppercase tracking-[0.35em] text-neutral-500">
                         Projects
                     </span>
@@ -52,7 +52,7 @@ export default function Projects() {
                 </div>
 
                 {/* GitHub Button */}
-                <div className="mt-14 flex justify-center">
+                <div className="mt-8 flex justify-center">
                     <MagicCard
                         className="rounded-xl border border-white/10 bg-white/5 backdrop-blur-sm"
                         gradientFrom="#1e1b4b"

@@ -19,7 +19,7 @@ export default function About() {
                         Who I Am
                     </h2>
 
-                    <p className="mt-6 max-w-5xl text-base leading-7 text-neutral-300 sm:text-lg sm:leading-8">
+                    <p className="mt-8 max-w-5xl text-base leading-7 text-neutral-300 sm:text-lg sm:leading-8">
                         I'm a full stack developer with a strong focus on Java and the Spring ecosystem, building secure, scalable web applications from backend APIs to modern React frontends. I enjoy designing systems that are reliable, performant, and intuitive, with a growing interest in AI-powered applications and developer tooling.
                     </p>
                 </div>
