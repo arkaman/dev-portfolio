@@ -28,80 +28,85 @@ export default function Footer() {
                 {/* Bottom */}
                 <div className="grid gap-10 text-center md:grid-cols-3 md:text-left">
 
-                    {/* Navigation */}
-                    <div>
-                        <h3 className="mb-4 text-sm font-semibold uppercase tracking-widest text-neutral-500">
-                            Navigation
-                        </h3>
+                    {/* Left section */}
+                    <div className="grid grid-cols-1 gap-10 sm:grid-cols-2 md:col-span-2">
 
-                        <ul className="space-y-2">
-                            <li>
-                                <a
-                                    href="#about"
-                                    className="text-neutral-300 transition hover:text-white"
-                                >
-                                    About
-                                </a>
-                            </li>
+                        {/* Navigation */}
+                        <div>
+                            <h3 className="mb-4 text-sm font-semibold uppercase tracking-widest text-neutral-500">
+                                Navigation
+                            </h3>
 
-                            <li>
-                                <a
-                                    href="#projects"
-                                    className="text-neutral-300 transition hover:text-white"
-                                >
-                                    Projects
-                                </a>
-                            </li>
+                            <ul className="space-y-2">
+                                <li>
+                                    <a
+                                        href="#about"
+                                        className="text-neutral-300 transition hover:text-white"
+                                    >
+                                        About
+                                    </a>
+                                </li>
 
-                            <li>
-                                <a
-                                    href="#contact"
-                                    className="text-neutral-300 transition hover:text-white"
-                                >
-                                    Contact
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
+                                <li>
+                                    <a
+                                        href="#projects"
+                                        className="text-neutral-300 transition hover:text-white"
+                                    >
+                                        Projects
+                                    </a>
+                                </li>
 
-                    {/* Socials */}
-                    <div>
-                        <h3 className="mb-4 text-sm font-semibold uppercase tracking-widest text-neutral-500">
-                            Connect
-                        </h3>
+                                <li>
+                                    <a
+                                        href="#contact"
+                                        className="text-neutral-300 transition hover:text-white"
+                                    >
+                                        Contact
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
 
-                        <ul className="space-y-3">
-                            <li>
-                                <a
-                                    href="https://github.com/arkaman"
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                    className="text-neutral-300 transition hover:text-white"
-                                >
-                                    GitHub
-                                </a>
-                            </li>
+                        {/* Socials */}
+                        <div>
+                            <h3 className="mb-4 text-sm font-semibold uppercase tracking-widest text-neutral-500">
+                                Connect
+                            </h3>
 
-                            <li>
-                                <a
-                                    href="https://linkedin.com/in/arkayanmanna"
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                    className="text-neutral-300 transition hover:text-white"
-                                >
-                                    LinkedIn
-                                </a>
-                            </li>
+                            <ul className="space-y-3">
+                                <li>
+                                    <a
+                                        href="https://github.com/arkaman"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="text-neutral-300 transition hover:text-white"
+                                    >
+                                        GitHub
+                                    </a>
+                                </li>
 
-                            <li>
-                                <a
-                                    href="mailto:arkayanmanna@outlook.com"
-                                    className="text-neutral-300 transition hover:text-white"
-                                >
-                                    Email
-                                </a>
-                            </li>
-                        </ul>
+                                <li>
+                                    <a
+                                        href="https://linkedin.com/in/arkayanmanna"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="text-neutral-300 transition hover:text-white"
+                                    >
+                                        LinkedIn
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a
+                                        href="mailto:arkayanmanna@outlook.com"
+                                        className="text-neutral-300 transition hover:text-white"
+                                    >
+                                        Email
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+
                     </div>
 
                     {/* Copyright */}

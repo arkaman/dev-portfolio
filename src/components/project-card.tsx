@@ -25,7 +25,7 @@ export default function ProjectCard({
     backendUrl,
 }: ProjectCardProps) {
     return (
-        <CardContainer className="inter-var">
+        <CardContainer className="w-full inter-var">
             <CardBody
                 className="
                     group/card
@@ -36,7 +36,8 @@ export default function ProjectCard({
                     border
                     border-border
                     bg-card
-                    p-6
+                    p-4
+                    sm:p-6
                     text-card-foreground
                     transition-all
                     duration-300
@@ -46,7 +47,7 @@ export default function ProjectCard({
             >
                 <CardItem
                     translateZ="50"
-                    className="text-2xl font-bold text-card-foreground"
+                    className="w-full text-center text-xl font-bold sm:text-left sm:text-2xl"
                 >
                     {title}
                 </CardItem>
@@ -71,7 +72,7 @@ export default function ProjectCard({
                         src={imageSrc}
                         alt={title}
                         className="
-                            h-auto
+                            aspect-video
                             w-full
                             rounded-xl
                             object-cover
@@ -83,7 +84,8 @@ export default function ProjectCard({
                     />
                 </CardItem>
 
-                <div className="mt-8 flex items-center justify-between">
+                <div className="mt-6 flex flex-col gap-4 lg:flex-row lg:items-center lg:justify-between">
+                    {/* Live Demo */}
                     <CardItem
                         as="a"
                         translateZ={20}
@@ -92,23 +94,37 @@ export default function ProjectCard({
                         rel="noopener noreferrer"
                         className="
                             flex
+                            w-full
                             items-center
+                            justify-center
                             gap-2
                             rounded-lg
+                            border
+                            border-border
                             px-4
-                            py-2
+                            py-2.5
                             text-sm
                             font-medium
-                            text-foreground
                             transition-colors
                             hover:text-primary
+                            lg:w-auto
                         "
                     >
                         <ExternalLink size={16} />
                         Live Demo
                     </CardItem>
 
-                    <div className="flex gap-3">
+                    {/* Frontend + Backend */}
+                    <div
+                        className="
+                            flex
+                            w-full
+                            flex-col
+                            gap-3
+                            md:flex-row
+                            lg:w-auto
+                        "
+                    >
                         <CardItem
                             translateZ={20}
                             as="a"
@@ -116,18 +132,26 @@ export default function ProjectCard({
                             target="_blank"
                             rel="noopener noreferrer"
                             className="
-                                flex items-center gap-2
+                                flex
+                                w-full
+                                items-center
+                                justify-center
+                                gap-2
                                 rounded-lg
                                 bg-linear-to-r
                                 from-violet-500
                                 to-cyan-500
-                                px-4 py-2
-                                text-sm font-semibold
+                                px-4
+                                py-2.5
+                                text-sm
+                                font-semibold
                                 text-white
-                                transition-all duration-300
+                                transition-all
+                                duration-300
                                 hover:-translate-y-0.5
                                 hover:shadow-lg
                                 hover:shadow-violet-500/30
+                                lg:w-auto
                             "
                         >
                             <CodeXml size={16} />
@@ -141,18 +165,26 @@ export default function ProjectCard({
                             target="_blank"
                             rel="noopener noreferrer"
                             className="
-                                flex items-center gap-2
+                                flex
+                                w-full
+                                items-center
+                                justify-center
+                                gap-2
                                 rounded-lg
                                 bg-linear-to-r
                                 from-violet-500
                                 to-cyan-500
-                                px-4 py-2
-                                text-sm font-semibold
+                                px-4
+                                py-2.5
+                                text-sm
+                                font-semibold
                                 text-white
-                                transition-all duration-300
+                                transition-all
+                                duration-300
                                 hover:-translate-y-0.5
                                 hover:shadow-lg
                                 hover:shadow-violet-500/30
+                                lg:w-auto
                             "
                         >
                             <CodeXml size={16} />
