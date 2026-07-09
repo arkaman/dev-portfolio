@@ -39,7 +39,7 @@ export default function Projects() {
                         Projects
                     </span>
 
-                    <h2 className="mt-3 text-4xl font-bold tracking-tight text-white sm:text-5xl">
+                    <h2 className="mt-3 text-4xl font-heading font-bold tracking-tight text-white sm:text-5xl">
                         Featured Work
                     </h2>
                 </div>

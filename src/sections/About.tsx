@@ -15,7 +15,7 @@ export default function About() {
                         About
                     </span>
 
-                    <h2 className="mt-3 text-4xl font-bold tracking-tight text-white sm:text-5xl">
+                    <h2 className="mt-3 text-4xl font-heading font-bold tracking-tight text-white sm:text-5xl">
                         Who I Am
                     </h2>
 

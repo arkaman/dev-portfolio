@@ -45,7 +45,7 @@ export default function Hero() {
                 {/* Left */}
                 <div className="mw-full max-w-xl space-y-2 text-center lg:text-left">
                     <BlurFade delay={0}>
-                        <h1 className="text-6xl font-bold tracking-tight text-white">
+                        <h1 className="text-6xl font-heading font-bold tracking-tight text-white">
                             Arkayan Manna
                         </h1>
                     </BlurFade>
