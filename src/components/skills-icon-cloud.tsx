@@ -6,7 +6,7 @@ const slugs = [
     "typescript",
     "python",
     "html5",
-    "css3",
+    "css",
     "react",
     "tailwindcss",
     "bootstrap",
