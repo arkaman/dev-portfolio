@@ -31,7 +31,7 @@ export default function Projects() {
             id="projects"
             className="relative flex min-h-screen justify-center px-6 py-20 sm:px-8"
         >
-            <div className="mx-auto w-full max-w-7xl px-8">
+            <div className="mx-auto flex w-full max-w-7xl flex-col px-2 sm:px-6 lg:px-8">
 
                 {/* Heading */}
                 <div className="mb-8">

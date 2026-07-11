@@ -7,7 +7,7 @@ export default function Contact() {
             id="contact"
             className="relative flex min-h-screen items-center justify-center px-6 py-20 sm:px-8"
         >
-            <div className="mx-auto w-full max-w-7xl px-8">
+            <div className="mx-auto flex w-full max-w-7xl flex-col px-2 sm:px-6 lg:px-8">
                 <div className="mb-8">
                     <span className="text-sm uppercase tracking-[0.35em] text-neutral-500">
                         Contact

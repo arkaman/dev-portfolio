@@ -7,7 +7,7 @@ export default function About() {
             id="about"
             className="relative flex min-h-screen items-center justify-center px-6 py-20 sm:px-8"
         >
-            <div className="mx-auto flex w-full max-w-7xl flex-col px-8">
+            <div className="mx-auto flex w-full max-w-7xl flex-col px-2 sm:px-6 lg:px-8">
 
                 {/* Top */}
                 <div>
